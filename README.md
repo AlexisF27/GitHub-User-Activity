@@ -12,6 +12,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 ## Usage
 
 ## Command
+
   ```bash
   ./GithubUserActivity <GitHub_Username>
 
@@ -24,7 +25,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
       Commit: Initial commit
       Commit: Added README
     Date: 2024-12-03T21:54:02Z
-  
   - Event: IssuesEvent
     Repository: AlexisF27/task_tracker
     Date: 2024-12-03T21:53:31Z
+
