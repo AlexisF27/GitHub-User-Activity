@@ -45,7 +45,6 @@ GithubUserActivity is a command-line application written in C++ that fetches and
    - Extracts relevant details such as event type, repository name, and commit messages.
   
 # Dependencies
-
 1. libcurl:
   - For making HTTP GET requests.
   - Libcurl Documentation
@@ -55,9 +54,9 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 
 # Build Instructions
 1. Clone the repository:
-  ```bash
-  git clone <repository-url>
-  cd GithubUserActivity
+```bash
+git clone <repository-url>
+cd GithubUserActivity
 
 2. Create a build directory:
 
