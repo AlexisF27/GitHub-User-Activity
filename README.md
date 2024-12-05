@@ -53,24 +53,19 @@ GithubUserActivity is a command-line application written in C++ that fetches and
   - JSON for Modern C++ GitHub
 
 # Build Instructions
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd GithubUserActivity
-
-2. Create a build directory:
-
+-  Clone the repository:
   ```bash
   git clone <repository-url>
   cd GithubUserActivity
 
-3. Run cmake and build:
-
+-  Create a build directory:
+  ```bash
+  git clone <repository-url>
+  cd GithubUserActivity
+-  Run cmake and build:
   ```bash
   cmake ..
   make
-
-4. Run the application:
-
+-  Run the application:
   ```bash
   ./GithubUserActivity <GitHub_Username>
