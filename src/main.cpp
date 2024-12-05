@@ -12,6 +12,8 @@ int main(int argc, char* argv[]) {
 
         std::string userName = argv[1];  
 
+        
+
         GithubUserActivity githubActivity;
 
         // Fetch the user's activity from the API
