@@ -43,5 +43,36 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 3. JSON Parsing:
    - Uses nlohmann/json to parse the API response.
    - Extracts relevant details such as event type, repository name, and commit messages.
+  
+# Dependencies
 
+1. libcurl:
+  - For making HTTP GET requests.
+  - Libcurl Documentation
+2. nlohmann/json:
+  - For JSON parsing.
+  - JSON for Modern C++ GitHub
 
+# Build Instructions
+1. Clone the repository:
+
+  ```bash
+  git clone <repository-url>
+  cd GithubUserActivity
+
+3. Create a build directory:
+
+  ```bash
+  git clone <repository-url>
+  cd GithubUserActivity
+
+4. Run cmake and build:
+
+  ```bash
+  cmake ..
+  make
+
+5. Run the application:
+
+  ```bash
+  ./GithubUserActivity <GitHub_Username>
