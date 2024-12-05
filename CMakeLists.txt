@@ -10,8 +10,8 @@ include_directories(include)
 # Add all source files
 set(SOURCES
     src/main.cpp
-    src/GithubUserActivity.cpp
-    src/HTTPClient.cpp
+    src/GithubUserActivity/GithubUserActivity.cpp
+    src/HTTPClient/HTTPClient.cpp
 )
 
 include_directories(include)

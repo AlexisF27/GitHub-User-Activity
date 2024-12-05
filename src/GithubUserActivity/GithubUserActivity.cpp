@@ -1,5 +1,7 @@
 #include "GithubUserActivity.h"
+#include "../HTTPClient/HTTPClient.h"
 #include <iostream>
+#include <string>
 
 GithubUserActivity::GithubUserActivity() {
 
@@ -11,15 +13,17 @@ void GithubUserActivity::readUserName(const std::string& userName) {
 
 std::string GithubUserActivity::fetchActivityFromAPI(const std::string& userName) {
     const std::string url = "https://api.github.com/users/" + userName + "/events";
-    
-    // Initialize HTTP connection using your networking library (e.g., libcurl).
-    // Example: Using pseudocode for HTTP GET
+    HTTPClient httpClient;
     std::string response;
-    bool success = performHttpGet(url, response); // You will implement this function.
-    
-    if (!success) {
-        throw std::runtime_error("Failed to connect to the API.");
+    try {
+        response = httpClient.performHttpGet(url);
+    } catch (const std::exception& e) {
+        throw std::runtime_error("Failed to fetch user activity: " + std::string(e.what()));
     }
-    
     return response;
+}
+
+void GithubUserActivity::processAPIResponse(const std::string& response) {
+    std::cout << "API Response: " << response << "\n";
+    // Add JSON parsing logic here
 }
