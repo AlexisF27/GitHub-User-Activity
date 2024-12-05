@@ -4,9 +4,12 @@
 #include <string>
 
 GithubUserActivity::GithubUserActivity() {
-
+    // Constructor logic (if needed)
 }
 
+GithubUserActivity::~GithubUserActivity() {
+    // Destructor logic (if needed)
+}
 void GithubUserActivity::readUserName(const std::string& userName) {
 
 };
