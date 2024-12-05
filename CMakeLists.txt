@@ -21,3 +21,6 @@ add_executable(GithubUserActivity ${SOURCES})
 # Find and link libcurl
 find_package(CURL REQUIRED)
 target_link_libraries(GithubUserActivity PRIVATE CURL::libcurl)
+
+find_package(nlohmann_json REQUIRED)
+target_link_libraries(GithubUserActivity PRIVATE nlohmann_json::nlohmann_json)

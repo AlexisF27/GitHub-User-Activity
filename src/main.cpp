@@ -1,5 +1,7 @@
 #include <iostream>
 #include "./GithubUserActivity/GithubUserActivity.h"
+    #include <nlohmann/json.hpp>
+    using json = nlohmann::json;
 
 int main() {
     try {
@@ -7,11 +9,9 @@ int main() {
         GithubUserActivity activityFetcher;
 
         // Test with a valid GitHub username
-        std::string userName = "AlexisF"; // Replace with a valid username
-        std::string response = activityFetcher.fetchActivityFromAPI(userName);
-
-        // Print the response to verify output
-        std::cout << "API Response for user '" << userName << "':\n" << response << std::endl;
+        std::string userName = "AlexisF27"; // Replace with a valid username
+        std::string response = activityFetcher.fetchActivityFromAPI(userName);  // Process and display the API response
+        activityFetcher.processAPIResponse(response);
 
     } catch (const std::exception& e) {
         // Handle any errors
