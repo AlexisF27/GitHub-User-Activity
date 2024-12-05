@@ -3,19 +3,28 @@
     #include <nlohmann/json.hpp>
     using json = nlohmann::json;
 
-int main() {
+int main(int argc, char* argv[]) {
     try {
-        // Create an instance of GithubUserActivity
-        GithubUserActivity activityFetcher;
+        if (argc != 2) {
+            std::cerr << "Usage: github-activity <GitHubUsername>\n";
+            return 1;
+        }
 
-        // Test with a valid GitHub username
-        std::string userName = "AlexisF27"; // Replace with a valid username
-        std::string response = activityFetcher.fetchActivityFromAPI(userName);  // Process and display the API response
-        activityFetcher.processAPIResponse(response);
+        std::string userName = argv[1];  
+
+        GithubUserActivity githubActivity;
+
+        // Fetch the user's activity from the API
+        std::cout << "Fetching activity for user '" << userName << "'...\n";
+        std::string response = githubActivity.fetchActivityFromAPI(userName);
+
+        // Process and display the API response
+        githubActivity.processAPIResponse(response);
 
     } catch (const std::exception& e) {
-        // Handle any errors
-        std::cerr << "Error: " << e.what() << std::endl;
+        // Handle errors gracefully
+        std::cerr << "An error occurred: " << e.what() << "\n";
+        return 1;
     }
 
     return 0;
