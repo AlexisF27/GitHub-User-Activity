@@ -10,10 +10,10 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 - Processes JSON responses with clean and structured formatting.
 
 ## Usage
-## Command
 
+## Command
   ```bash
-    ./GithubUserActivity <GitHub_Username>
+  ./GithubUserActivity <GitHub_Username>
 
 ## Example Output
 
