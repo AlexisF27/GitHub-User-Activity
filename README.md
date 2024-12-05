@@ -29,3 +29,19 @@ GithubUserActivity is a command-line application written in C++ that fetches and
     Repository: AlexisF27/task_tracker
     Date: 2024-12-03T21:53:31Z
 
+
+# Implementation Details
+## Key Components
+1. GithubUserActivity Class:
+   - Manages user interactions, API calls, and response processing.
+   - Core methods:
+     - fetchActivityFromAPI: Makes an HTTP GET request to the GitHub API.
+     - processAPIResponse: Parses and formats the JSON response.
+2. HTTPClient Class:
+   - Handles HTTP GET requests using libcurl.
+   - Implements callback functions for response handling.
+3. JSON Parsing:
+   - Uses nlohmann/json to parse the API response.
+   - Extracts relevant details such as event type, repository name, and commit messages.
+
+
