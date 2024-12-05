@@ -11,12 +11,12 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 
 ## Usage
 
-## Command
+- Command
 
   ```bash
   ./GithubUserActivity <GitHub_Username>
 
-## Example Output
+- Example Output
 
   ```bash
   Fetching activity for user 'AlexisF27'...
