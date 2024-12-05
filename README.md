@@ -15,6 +15,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 
   ```bash
   ./GithubUserActivity <GitHub_Username>
+  ```
 
 - Example Output
 
@@ -28,6 +29,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
   - Event: IssuesEvent
     Repository: AlexisF27/task_tracker
     Date: 2024-12-03T21:53:31Z
+  ```
 
 
 # Implementation Details
@@ -54,6 +56,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 
 # Build Instructions
 -  Clone the repository:
+  
 ```bash
 git clone <repository-url>
 cd GithubUserActivity
@@ -64,12 +67,17 @@ cd GithubUserActivity
 ```bash
 git clone <repository-url>
 cd GithubUserActivity
+```
 
 -  Run cmake and build:
+
 ```bash
 cmake ..
 make
+```
 
 -  Run the application:
+  
 ```bash
 ./GithubUserActivity <GitHub_Username>
+```
