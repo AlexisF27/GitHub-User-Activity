@@ -13,7 +13,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 ## Command
 
   ```bash
-  ./GithubUserActivity <GitHub_Username>
+    ./GithubUserActivity <GitHub_Username>
 
 ## Example Output
 
