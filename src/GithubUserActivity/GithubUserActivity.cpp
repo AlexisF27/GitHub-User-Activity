@@ -52,6 +52,7 @@ void GithubUserActivity::processAPIResponse(const std::string& response) {
                 auto commits = event["payload"].value("commits", nlohmann::json::array());
                 size_t commitCount = commits.size();
                 activities.push_back("Pushed " + std::to_string(commitCount) + " commits to " + repoName + " on " + eventDate);
+            
             }
             else if (eventType == "IssuesEvent" && event.contains("payload")) {
                 std::string action = event["payload"].value("action", "Unknown Action");
