@@ -57,6 +57,7 @@ GithubUserActivity is a command-line application written in C++ that fetches and
 ```bash
 git clone <repository-url>
 cd GithubUserActivity
+```
 
 -  Create a build directory:
 
