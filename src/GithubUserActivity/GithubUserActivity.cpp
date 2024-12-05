@@ -38,6 +38,10 @@ void GithubUserActivity::processAPIResponse(const std::string& response) {
             return;
         }
 
+
+
+        
+
         // Iterate through each event and extract details
         for (const auto& event : jsonResponse) {
             std::string eventType = event.value("type", "Unknown Event");
